@@ -16,22 +16,35 @@ Type ‘make’ into the command line to compile and run program
 
 	Functions:
 void printStringToken(string key, string lex)
-Prints out string token alongside its string lex value
+
+- Prints out string token alongside its string lex value
+
 void printCharToken(string key, char lex)
-Prints out string token alongside its character lex value
+
+- Prints out string token alongside its character lex value
+
 bool fsm(string s)
-Takes in string input and parses it using a FSM to determine if it ends on a final state
+
+- Takes in string input and parses it using a FSM to determine if it ends on a final state
+
 Returns true if in the final state, false otherwise.
 
 	Data structures:
 vector<string> keywords
-A list of certain keywords such as ‘int’, ‘bool’, ‘if’, ‘else’, ‘for’, etc.
+
+- A list of certain keywords such as ‘int’, ‘bool’, ‘if’, ‘else’, ‘for’, etc.
+
 vector<char> separators
-A list of certain separators such as (, ), {, }, :, ;, space, etc.
+
+- A list of certain separators such as (, ), {, }, :, ;, space, etc.
+
 vector<char> operators
-A list of certain operators such as +, -, *, >, <, etc.
+
+- A list of certain operators such as +, -, *, >, <, etc.
+
 vector<string> syntaxResults
-A list of outputs to be printed out by the syntax analyzer
+
+- A list of outputs to be printed out by the syntax analyzer
 
 	Implementation:
 In a while loop, the program will grab each line from a text file and parse through each individual element
@@ -41,6 +54,7 @@ Once the production rule is determined, the program will continue to print the t
 
 	Production Rules:
 Each rule is separated into individual “states”
+
 The state will be indexed into the syntaxResults vector to print out the complete rule
 
 RULES:
