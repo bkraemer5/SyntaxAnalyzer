@@ -53,6 +53,7 @@ When a token is found, it will compare each one to a set of production rules to 
 Once the production rule is determined, the program will continue to print the token, lexeme, and the production rules as long as the source code remains syntactically correct
 
 	Production Rules:
+
 Each rule is separated into individual “states”
 
 The state will be indexed into the syntaxResults vector to print out the complete rule
