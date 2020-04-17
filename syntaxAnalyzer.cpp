@@ -37,7 +37,7 @@ int main() {
          * 2: Q --> +TQ | -TQ | epsilon
 	 * 3: T --> FR
 	 * 4: R --> *FR | /FR | epsilon
-	 * 5: F --> (E) | i
+	 * 5: F --> (E) | epsilon
          */
 
 	// text result of syntax analyzer
