@@ -124,6 +124,9 @@ int main() {
                                                                 type = "INTEGER\t";
                                                         }
                                                         printStringToken(type, number);
+							if (currentSyntaxState == 3) {
+								currentSyntaxState++;
+							}
 							cout << syntaxResults.at(currentSyntaxState);
                                                         number = "";
                                                         type = "";
@@ -136,6 +139,9 @@ int main() {
                                                 type = "SEPARATOR";
 						if (*i == ';') {
 							currentSyntaxState = 5;
+						}
+						else {
+							currentSyntaxState = 1;
 						}
 						printCharToken(type, *i);
 						cout << syntaxResults.at(currentSyntaxState);
@@ -174,6 +180,9 @@ int main() {
 
                                                 type = "INTEGER\t";
                                                 printStringToken(type, number);
+						if (*i == '=') {
+                                                         currentSyntaxState = 0;
+                                                 }
 						cout << syntaxResults.at(currentSyntaxState);
                                                 number = "";
 
